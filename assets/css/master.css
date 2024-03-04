@@ -1,0 +1,782 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100..900&display=swap');
+
+/* VARIABLES */
+
+:root {
+  /* Color settings */
+  --color-background: transparent;
+  --color-text: #25150b;
+  --color-text-link: #c47a3b;
+  --color-text-link-hover: #442723;
+  /* Font settings */
+  --font-family: 'Hahmlet', serif, 'Noto Sans KR', sans-serif;
+  --font-family-body: 'Noto Sans KR', sans-serif;
+  --font-size-body: 80%;
+  --font-size-head: 38px;
+  /* Margins settings */
+  --margin: 1rem;
+}
+
+
+
+/* GENERAL STYLES */
+
+html {
+  font: var(--font-size) var(--font-family);
+  color: var(--color-text);
+  background-color: var(--color-background);
+  scroll-behavior: smooth;
+}
+
+body {
+  position:relative;
+  background-color: var(--color-background);
+  font: var(--font-size-body) var(--font-family);
+  color: var(--color-text);
+  width:100%;
+  height:100%;
+  overflow-y:auto;
+}
+
+a {
+  color: var(--color-text-link);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-text-link-hover);
+  text-decoration: underline;
+}
+
+a:focus-visible {
+  color: var(--color-text-link-hover);
+  text-decoration: none;
+}
+
+
+.title h1{
+  font-size: 10vw;
+  word-spacing: -1vw;
+  font: var(--font-size-head*3) var(--font-family);
+  font-weight: 400;
+  /* font-style: italic; */
+  line-height: 8rem;
+  margin-bottom: 0;
+  z-index: 1;
+  }
+
+.title img{
+  position: absolute;
+  justify-content: center;
+  display: inline;
+  /* left: 50%; */
+  padding-top: 100vh;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  width: 75vw;
+}
+
+.rellax-layer img{
+  z-index: -2;
+  position: absolute;
+  width: 100%;
+}
+
+h2{
+  /* h2 style */
+  font: var(--font-size-head) var(--font-family);
+  font-weight: 400;
+}
+
+h3{
+  /* h3 style */
+  font: var(--font-size-head) var(--font-family);
+  font-weight: 400;
+
+}
+
+h4, h5, h6 {
+  /* h4-h5-h6 style */
+  font: var(--font-size-head) var(--font-family);
+  font-weight: 400;
+  text-align: center;
+}
+
+p{
+  /* paragraph style */
+  font: var(--font-size-body) var(--font-family-body);
+  line-height: 1.2rem;
+  font-size: 0.8rem;
+}
+
+
+.tutorial {
+  position: static;
+  display:inline-flex;
+  max-width: 2.5vw;
+  max-height: 2.5vh;
+}
+.tutorial img { width: 2vw; }
+.fulltext {
+  padding: 5px;
+  font-family: 'Hahmlet', serif;
+  font-size: 0.6rem;
+  line-height: 1rem;
+  text-indent: 0rem;
+  /* box-sizing: border-box; */
+  width: 20vw;
+  max-height: 25vh;
+  position: absolute;
+  text-align: left;
+  background-color: rgb(123, 213, 109) ;
+  color: black;
+  visibility: none; 
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 2;
+}
+/* .fulltext {
+  visibility: none; opacity: 0;
+  transition: opacity 0.3s;
+} */
+.tutorial:hover .fulltext {
+visibility: visible;
+opacity: 1;
+}
+
+
+.quote p{
+  font: var(--font-size-head) var(--font-family);
+  font-weight: 400;
+  font-style: italic;
+  font-size: var(--font-size-body);
+}
+
+ul{
+  /* ordered list and unordered list styles */
+  list-style-type: none;
+}
+
+ol{
+  /* ordered list and unordered list styles */
+  /* list-style-type: none; */
+}
+
+blockquote{
+  /* blockquote element style */
+}
+
+hr{
+  /* horizontal rule style */
+}
+
+.navigation{
+  text-align: center;
+  margin-bottom: 10rem;
+  z-index: 1;
+  /* float: left;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  background-color: white;
+  width: 100%;
+  height: 2.5rem; */
+}
+
+@keyframes example {
+  0%   { background-color: transparent; opacity:0; left:50%; top:0px;}
+  100% { background-color: transparent; opacity:0;}
+  100% { background-color: transparent; opacity:1;  right:0px; top:0px;}
+}
+.navigation a{
+/* float: left;
+color: #25150b;
+text-align: center;
+padding: 0.5rem;
+text-decoration: none;
+font-size: 25px; */
+margin-left: 1rem;
+}
+
+
+
+.sticky {
+  float: right;
+  text-align: left;
+  margin-bottom: 0rem;
+  position: fixed;
+  top: 0;
+  width: 17.2%;
+  font-size: 17px;
+  height: 2.5rem;
+  animation-name: example;
+  animation-duration: 1s;
+  margin-top: 0rem;
+  background-color: transparent;
+  padding-top: 1rem;
+  padding-left: 2.5rem;
+
+}
+
+
+
+.sticky + main {
+}
+
+
+/* PAGE STYLES */
+
+/* page structure */
+
+div.page-wrapper {
+  /* the element that 'wraps' everything */
+  padding: var(--margin);
+  /* background: linear-gradient(180deg, transparent 90%, yellow 93%, green 96%); */
+}
+
+/* navigation */
+ 
+nav{
+  
+}
+
+/* content */
+header{
+  text-align: center;
+  
+}
+
+.title{
+  margin-bottom: 45rem;
+  padding-top: 10vh;
+}
+
+.thanks {
+  padding: var(--margin);
+  text-align: left;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 6rem;
+  font-size: 0.5rem;
+}
+
+.toc{
+  font-size: 0.8rem;
+  text-align: center;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+  height: 400px;
+}
+
+.toc li{
+  margin-bottom: 1rem;
+  text-decoration: none;
+  float:left
+}
+
+.toc li a {
+  display: inline-block;
+  padding: 30px 30px;
+}
+
+
+main{
+  position: relative;
+  float: center;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.container{
+  width: 100%;
+  margin-top: 10rem;
+}
+
+/* .footnotes{
+  order: 1;
+  position: sticky;
+  top: 0;
+  height: 100%;
+  padding-top: 8.5rem;
+  width: 25vw;
+  font-size: 0.8rem;
+} */
+
+/* .footnote{
+  margin-bottom: 1rem;
+} */
+
+/* #f1{
+} */
+
+footer{
+  position: relative;
+  /* width: 100%; */
+  float: left;
+}
+
+.abstract{
+    /* margin-left: 10rem;
+    margin-bottom: 15rem;   */
+    padding: var(--margin);
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 5rem;
+}
+
+.abstract p{
+  text-align: left;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  column-count: 1;
+}
+
+.chapter_number{
+  text-align: center;
+  margin-bottom: 0.5rem;
+  margin-top: 3rem;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  text-align: center;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+.abstract h2{
+  text-align: center;
+  font-size: 2rem;
+}
+
+.intro{
+  margin-left: 20%;
+  margin-right: 20%;
+  justify-content: center;
+  /* margin-left: 10rem; */
+  margin-bottom: 15rem;
+}
+
+.intro h2{
+  font-size: 2rem;
+}
+
+#text{
+
+}
+
+.text{
+  order: 2;
+  width: 100%;
+}
+
+.text p{
+}
+
+.chapter{
+  margin-left: 20%;
+  margin-right: 20%;
+  display: flex;
+  margin-bottom: 15rem;
+  /* width: 100%; */
+}
+
+.chapter h2{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+
+.chapter-image{
+  margin-left: 20vw;
+  width: 50vw;
+  opacity: 0.6;
+  z-index: -1;
+  position: absolute;
+  /* justify-content: center;
+  display: inline; */
+  /* transform: translate(-50%, -50%); */
+}
+
+.chapter2 img {
+  justify-content: center;
+  align-items: center;
+}
+
+.imgpar{
+  /* background-color: aquamarine; */
+}
+
+.imginpar-left {
+  position: relative;
+  float: left;
+  align-content: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  width: 22vw;
+}
+
+.imginpar-left img{
+  width: 22vw;
+}
+
+.imginpar{
+  position: relative;
+  float: right;
+  height: 100%;
+  width: 22vw;
+}
+
+.imginpar{
+  /* float: right; */
+}
+
+.imginpar img{
+width: 22vw;
+}
+
+.textinpar{
+  padding-right: 25vw;
+}
+
+.textinpar-right {
+  padding-left: 25vw;
+}
+
+.imgpar img{
+  /* position: sticky; */
+  /* top: 0; */
+  float: right;
+}
+
+.imgpar figcaption{
+  /* float: right; */
+}
+
+
+figcaption{
+  padding-top: 5px;
+  font-size: 12pt;
+  padding-bottom: 5px;
+}
+
+
+#c3-list{
+  padding-left: 7%;
+  font-family: 'Hahmlet', serif;
+  font-size: 0.8rem;
+}
+
+.bio {
+  padding: var(--margin);
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 15rem;
+  column-count: 3;
+}
+
+.bio p {
+  font-size: 0.5rem;
+  line-height: 0.8rem;
+  word-wrap: break-word;
+  
+}
+
+.rellax{
+  /* position: relative;
+  float: right; */
+}
+
+#img2{
+}
+
+#biblio {
+  margin-top: 2rem;
+}
+
+
+
+/* GENERAL USABILITY */
+
+/* hide desktop mobile etc */
+
+.desktop {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
+/* if you want to hide something visually but want to keep it readable / accessible for screen readers (sr) */
+
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+
+
+
+/* MEDIA QUERIES */
+
+/* responsive typeface */
+
+@media (max-width: 298px) { 
+  :root{ --font-size: 14px; } html, body {font: var(--font-size) var(--font-family);} 
+}
+@media (min-width: 299px) and (max-width: 339px) { 
+  :root{ --font-size: 15px; } html, body {font: var(--font-size) var(--font-family);} 
+}
+@media (min-width: 340px) and (max-width: 439px) { 
+  :root{ --font-size: 16px; } html, body {font: var(--font-size) var(--font-family);} 
+}
+@media (min-width: 440px) and (max-width: 599px) { 
+  :root{ --font-size: 18px; } html, body {font: var(--font-size) var(--font-family);}
+}
+@media (min-width: 600px) and (max-width: 779px) { 
+  :root{ --font-size: 19px; } html, body {font: var(--font-size) var(--font-family);}
+}
+@media (min-width: 780px) and (max-width: 992px) { 
+  :root{ --font-size: 20px; } html, body {font: var(--font-size) var(--font-family);}
+}
+@media (min-width: 993px) and (max-width: 1200px) { 
+  :root{ --font-size: 22px; } html, body {font: var(--font-size) var(--font-family);}
+}
+@media (min-width: 1201px) and (max-width: 1319px) { 
+  :root{ --font-size: 24px; } html, body {font: var(--font-size) var(--font-family);}
+}
+@media (min-width: 1320px) and (max-width: 1619px) { 
+  :root{ --font-size: 26px; } html, body {font: var(--font-size) var(--font-family);}
+}
+@media (min-width: 1620px) and (max-width: 1879px) { 
+  :root{ --font-size: 28px; } html, body {font: var(--font-size) var(--font-family);}
+}
+@media (min-width: 1880px) { 
+  :root{ --font-size: 30px; } html, body {font: var(--font-size) var(--font-family);}
+}
+
+
+
+/* website media queries */
+
+@media (max-width: 779px) {
+
+  /* styles for screen sizes 779px, should covers 'mobile' and 'tablet' */
+  /* style this one first and then use the two others to 'override' some styles (exceptions/details) */
+ 
+  .title h1{
+    font-size: 10vw;
+    word-spacing: -1vw;
+    padding-top: 10rem;
+    font: var(--font-size-head*3) var(--font-family);
+    font-weight: 400;
+    line-height: 3rem;
+    margin-bottom: 0;
+    z-index: 1;
+  }
+
+  .title img{
+      position: absolute;
+      justify-content: center;
+      left: 50%;
+      padding-top: 100vh;
+      transform: translate(-50%, -50%);
+      z-index: 0;
+      width: 75vw;
+    }  
+
+  .rellax-layer img {
+      z-index: -2;
+      position: absolute;
+      width: 100%;
+    }
+
+  .toc{
+      height: 500px;
+    }    
+
+  .abstract{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;  
+  }
+
+  .abstract p{
+    text-align: left;
+    font-size: 0.7em;
+    line-height: 1.2rem;
+    column-count: 1;
+  }
+
+  .thanks {
+    /* float: left; */
+    /* width: 60%; */
+    padding: var(--margin);
+    text-align: left;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 6rem;
+    font-size: 0.6rem;
+  }
+
+  .intro{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .chapter{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  main{
+    width: 100%;
+  }
+
+
+
+  /* .footnotes{
+    position:fixed;
+    display:block;
+    width: 100%;
+    height: 5rem;
+    margin:0;padding:0;
+    bottom:0;
+    left: 0;
+    top: initial;
+    z-index: 1;
+    overflow-x: auto;
+    overflow-y: hidden;
+    background-color: gold;
+  } */
+
+  /* .footnote-container{
+    position:relative;
+    display:inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap:nowrap;
+    width:auto;
+    height:100%;
+    padding: 1rem;
+    background-color: #fffaee;
+    
+  } */
+
+  /* .footnote {
+    position: relative;
+    order: initial;
+    top: initial;
+    height: auto;
+    width: 50vw;
+    margin-right: 1rem;
+    padding-bottom: 1rem;
+    background-color: #fffaee;
+    background-repeat: repeat-x;
+    padding-right: 1rem;
+  } */
+
+  .rellax { transform: none !important }
+  .title{
+    text-align: center;
+  }
+
+  .imginpar {
+    position: relative;
+    float: left;
+    align-content: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    width: 100%;
+  }
+
+  .textinpar {
+    margin-left: 0rem;
+    padding-right: 0;
+    margin-right: 0rem;
+  }
+
+  .textinpar-right {
+    margin-right: 0rem;
+    padding-left: 0;
+    margin-left: 0rem;
+  }
+  
+  .imginpar img{
+  width: 80vw;
+  }
+
+  #navbar{
+  width: 100%;
+  text-align: center;
+  padding-left: 0;
+  color: #25150b;
+  background-color: white;
+  }
+
+  .navigation a:link{
+    color: #25150b;
+    text-decoration: none;
+  }
+
+  .bio{
+    width: 100%;
+    overflow: hidden;
+    margin-left: 1rem;
+    margin-bottom: 15rem;  
+    font-size: 0.8rem;
+    line-height: 1rem;
+    column-count: 0;
+  }
+
+  figcaption{
+    float: left;
+    position: relative;
+    font-size: 0.6rem;
+  }
+  .quote p{
+    font: var(--font-size-head) var(--font-family);
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.5rem;
+  }
+  
+  /* utilities */
+
+  .desktop{display:none!important;}
+  .mobile{display:block;}
+
+}
+
+
+
+@media (max-width: 339px) {
+  /* use this query to apply style changes to smaller smartphones sizes (like an iPhone 5S or SE 2016), max size of 339px */
+}
+
+
+
+@media (max-width: 779px) and (orientation: landscape) {
+  /* use this query to apply style changes for 'mobile' screen sizes that are flipped in 'landscape' mode */
+}
+
+
+
+@media (min-width: 780px) and (max-width: 992px) {
+  /* use this query to apply style for 'small' desktop screens */
+}
+
+

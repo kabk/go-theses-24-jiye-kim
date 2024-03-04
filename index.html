@@ -1,10 +1,677 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en-uk">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+	<!-- favicons -->
+	<!--
+	very minimal use of favicon with a 512x512px .png favicon, 
+	use 'https://www.favicon-generator.org' to generate a more extensive favicon code 
+-->
+	<link rel="icon" href="/content/images/돌2-26.png" sizes="32x32" />
+	<link rel="icon" href="/content/images/돌2-26.png" sizes="192x192" />
+
+	<!-- website title, visible in the browser window and on link sharing -->
+	<title>The Power of Doing Nothing by Jiye Kim</title>
+
+	<!-- links for extensions and dependencies -->
+
+	<!-- css -->
+	<!-- normalize 'resets' some browser properties to make them look the same across browsers -->
+	<link rel="stylesheet" href="assets/css/normalize.css">
+	<link rel="stylesheet" href="assets/css/master.css?ver=1.1">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Diphylleia&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+	<!-- js -->
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/rellax.js"></script>
+	<script type="text/javascript" src="assets/js/functions.js"></script>
+    <script src="/assets/js/app.js"></script>
+
 </head>
+
 <body>
-    doing nothing thesis
+	<header>
+		<div class="title">
+			<div class="rellax" data-rellax-speed="5" data-rellax-percentage="1" data-rellax-zindex="1"
+				data-rellax-mobile-speed="-1">
+				<img src="content/images/돌2-26.png" alt="stone" width="736">
+			</div>
+            <div class="rellax-layer">
+                <img src="content/images/layer1.png" alt="layer1" width="736">
+            </div>
+            <div class="rellax-layer">
+                <img src="content/images/layer2.png" alt="layer2" width="736">
+            </div>
+			<h1 class="one rellax" data-rellax-speed="-8" data-rellax-mobile-speed="-1"> The Power of <nobr>Doing Nothing</nobr></h1>
+		</div>
+        <!-- abstract -->
+        <div class="abstract">
+			<h2 class="subtitle" id="abstract">Abstract</h2>
+			<p>In modern society, most people have shifted their awareness to organizing lives around 
+				productivity and achievement instead of prioritizing well-being. As people increasingly value work, 
+				justifying the enjoyment of relaxation becomes challenging. Through psychological research on mental health, 
+				this paper attempts to provide an overview of cognitive shifts that counter inherent social propositions. 
+				This goes in hand with acts of rest, which question the traditional concept of doing nothing and social standards. 
+				The purpose of this thesis is to disclose a positive aspect of relaxation that is called doing nothing 
+				as a means of protective mechanism while living in a hustle culture.</p>
+		</div>
+        <!-- thanks to -->
+		<div class="thanks">
+			<p>Words cannot express my gratitude to my professor, Füsun Türetken for her feedback. 
+                I also could not have undertaken this journey without my family, who has kept my spirits 
+                and motivation high during this process. Thanks should also go to my friends who inspired me 
+                with late-night feedback sessions and enjoyment together of doing nothing. 
+                Lastly, I’d like to mention my dog for all the entertainment and emotional support.</p>
+		</div>
+	</header>
+
+    <!-- toc -->
+	<div class="toc">
+		<nav>
+			<h2>Table of Content</h2>
+			<div class="navigation" id="navbar">
+				<ul>
+					<li><a href="#intro">Introduction</a></li>
+					<li><a href="#c1"><strong>1</strong> <br> In the Shadows of<br> Achievement</a></li>
+					<li><a href="#c2"><strong>2</strong> <br> Psychological Barrier to <br>Productivity</a></li>
+					<li><a href="#c3"><strong>3</strong> <br> Resistance to Change Exposed in Individuals Cognition and Behaviors</a></li>
+					<li><a href="#c4"><strong>4</strong> <br> Seeking Balance through Doing Nothing</a></li>
+					<li><a href="#con">Conclusion</a></li>
+                    <li><a href="#biblio">Bibliography</a></li>
+				</ul>
+            </div>
+            <!-- mobile navbar -->
+            <div class="navigation sticky" id="navbar">
+                <a href="#c1"><strong>1</strong></a> 
+                <a href="#c2"><strong>2</strong></a> 
+                <a href="#c3"><strong>3</strong></a> 
+                <a href="#c4"><strong>4</strong></a>
+            </div>
+		</nav>
+	</div>
+
+	<!-- contents -->
+	<div class="page-wrapper" id="page">
+		<main>
+			<div class="container">
+                <!-- intro -->
+				<div class="intro" id="text">
+					<h2 class="subtitle" id="intro">Introduction</h2>
+					<p>When was the last time you ‘did nothing’? A time when you could relax without 
+                        thinking about your schedule or pending tasks. Perhaps it is a story from a distant past. 
+                        “다음 생에는 돌로 태어나 아무것도 안 했으면 좋겠다.” <sup>Figure 1</sup> 
+                        The given sentence is a widely known expression about doing nothing in South Korea. It says in English, ‘I hope to be born as a stone and do nothing in my next life.’ Why did it become popular?</p>
+
+                    <div class="imgpar">
+                        <div class="imginpar">
+                            <div class="rellax" data-rellax-speed="-3" data-rellax-percentage="1" data-rellax-mobile-percentage="0.1"
+                                data-rellax-zindex="5" data-rellax-mobile-speed="-1">
+                                <img src="content/images/다음생돌짤.jpeg" alt="recipie" width="1099" />
+                                <figcaption>Figure 1. In the image, a scene from a Pokémon where Metamong(メタモン, Ditto) is lying was used. This character can transform into other objects or people. Someone made this meme as a metaphor by using a screenshot of Pokémon and its ability with the sentence, but it is not known who created it at first.</figcaption>
+                            </div>
+                        </div>
+                        <div class="textinpar">
+                            <p style="text-indent: 3rem;">Korea, having experienced rapid growth in a short period, is a society where people tend to prioritize productivity. In my opinion, such growth made the organizational domain more important than the individual, leading people to focus on productivity and strategically adopt an interpretation of the majority. 
+                                As a result, they may even be cautious about taking a brief break, fearing judgment from others. Therefore, the given sentence reflects the desire to sacrifice relaxation in this life to succeed and live well, with the hope of being able to rest in the next life.</p>
+                            <p style="text-indent: 3rem;">I strived to achieve not only massive goals but also small particular tasks each day like washing dishes. However, if I feel trapped in to-do lists or consider every moment of the day as an opportunity to do more, this mindset can become problematic. 
+                                Of course, I know how to do nothing. I can lie down, space out and waste time. But when I do these, my mind may be preoccupied with some kinds of tasks. The guilt of doing nothing prevents me from truly relaxing and enjoying nothing. This brought me to an exploration of the research question: “What is the meaning of doing nothing?". 
+                                I embarked on this journey to explore the aesthetics of ‘doing nothing’ and discover ways to navigate mental and physical well-being. 
+                                In a productivity-obsessed culture, I believe it is essential that people explore the possibilities and value of ‘doing nothing’ to improve their lives, melt away stress and make themselves productive when they do work.</p>
+                        </div>
+                    </div>
+                    
+                    <p style="text-indent: 3rem;">In the following chapters, I will delve into the various aspects of my thesis, starting with my experience of not wanting to do anything when I was in Korea. 
+                        From there, I will explore the psychological impact of a productivity-oriented culture, how it induces cognitive dissonance, and ultimately the concept of doing nothing.</p>
+				</div>
+
+				<!-- CHAPTER 1 -->
+				<div class="rellax" data-rellax-speed="3" data-rellax-percentage="1" data-rellax-zindex="5">
+					<img class="chapter-image" src="content/images/돌2-26.png" alt="c1" width="500" style="opacity: 0.5">
+				</div>
+				<div class="chapter" id="c1">
+					<div class="text" id="chapter-1">
+						<h3 class="chapter_number">Chapter 1</h3>
+                        <h2 class="subtitle" id="c1">In the Shadows of Achievement</h2>
+						
+                        <p>When I was in high school, I was a person who put down the shutters and rarely reacted to the things happening around me. I did not completely choose physical isolation, but I did not put much energy into anything. Looking back, I attribute this behaviour to absorption in a college entrance examination. The intense competition in exam preparation had exhausted me. “Whatever, I just did not feel like talking and doing something, so I rushed home right after school.” That is what I said when I was in my 3rd year of high school.
+                        </p>
+                        <p style="text-indent: 3rem;">For entry into university, all Korean students take the same test called ‘CSAT’.
+                            
+                            <!-- <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> -->
+                            <span class="tutorial">
+                                <img src="/content/images/돌2-26.png">
+                                <span class="fulltext">
+                                    [1]<br>The College Scholastic Ability Test or CSAT, also abbreviated Suneung, is a standardized test which is recognized by South Korean universities. It is designed to test a candidate's ability to study in college, with questions based on Korea's high-school curriculum.
+                                </span>
+                            </span>
+                        
+                        Because of this, it was ironic that one required academic excellence over art skills to attend a prestigious art university. 
+                        This led me to be stressed and I had certain expectations such as, ‘I have to study and achieve more.’ This stemmed from the circumstance that most of my family graduated from top universities in Korea, with half of them being doctors – a profession highly regarded for its intellectual rigour and societal respect. The admiration directed towards this profession goes beyond life-saving contributions; it is also rooted in the narrative of individuals diligently studying and working hard from a young age, eventually achieving success by gaining admission to a prestigious medical university and becoming a doctor. To support this, it is necessary to explain the background that has cultivated a strong orientation towards achievement within Korean society.
+                        </p>
+
+                        <h4 class="chapter_number">The Ingrained Culture of Achievement</h4>
+                        <p>Korea experienced remarkable economic growth at an astonishing pace, famously known as the ‘Miracle on the Han River,’ following the devastation of the Korean War (1950-1953). When industrial facilities were in ruins, the GDP per capita immediately after the war was only $67, but it increased remarkably to $34,768 in 2023.
+                            <span class="tutorial">
+                                <img src="/content/images/돌2-26.png">
+                                <span class="fulltext">
+                                    [2]<br>한국문화원(Korean Cultural Centre), <br>“세계 속의 한국 경제-한강의 기적,” 2024
+                                </span>
+                            </span>
+                            This process was made possible because the national community pursued intensive growth.
+                        </p>
+                        <p style="text-indent: 3rem;">Over the past 70 years, this transformative process instilled a mindset in Koreans, teaching them that collectively setting goals and striving for development leads to notable achievements. The fruits of the extensive time and effort invested in a notion of growth and achievement – everyone should strive for a better future – have naturally become ingrained in the national psyche. Moreover, when it comes to jobs, there is a tendency to value the degree of individuals’ efforts and achievements in seeking a job. Consequently, a university education following high school graduation is viewed as a natural means to demonstrate one’s dedication, leading to a university enrollment rate in Korea exceeding 70%.
+                            <span class="tutorial">
+                                <img src="/content/images/돌2-26.png">
+                                <span class="fulltext">
+                                    [3]<br>지표서비스, “취학률 및 진학률,” 2022
+                                </span>
+                            </span>
+                            As a result, the lingering societal bias in an achievement-oriented mindset has become prevalent. This has permeated the media, and ideas such as working hard, putting in effort, and achieving success have become dominant opinions among the younger generation. 
+                        </p>
+
+                        <h4 class="chapter_number">Fear of Isolation: Adoption of Social Proposition</h4>
+                        <p>According to Elisabeth Noelle-Neumann’s theory assumes that “humans have a fear of isolation or rejection and seek acceptance from the majority.” Therefore, they tend to monitor public opinion when faced with specific issues. They express their views confidently when their stance aligns with the prevalent majority. On the contrary, if one's opinion conflicts with the majority or belongs to the minority, one tends to remain silent. 
+                            <span class="tutorial">
+                                <img src="/content/images/돌2-26.png">
+                                <span class="fulltext">
+                                    [4]<br>Elisabeth Noelle-Neumann,<br> The Spiral of Silence (1984).
+                                </span>
+                            </span>
+                        </p>
+                        <p style="text-indent: 3rem;">This phenomenon is amplified, particularly in collectivist societies like Korea, where members are highly conscious of their surroundings and consistently consider the opinions of others.  
+                            <span class="tutorial">
+                                <img src="/content/images/돌2-26.png">
+                                <span class="fulltext">
+                                    [5]<br>허재홍, “눈치가 안녕감과 대인관계에 미치는 영향,” (2014)
+                                </span>
+                            </span>
+                        Sensitivity to potential alienation is a common trait, leading to a conscious effort to avoid isolation.
+                            <span class="tutorial">
+                                <img src="/content/images/돌2-26.png">
+                                <span class="fulltext">
+                                    [6]<br>조선영 et al., “한일대학생의 대인불안 규정요인의 비교: 공적자기의식, 자아존중감, 정을 중심으로” 19, no. 1 (2005): 1–12.
+                                </span>
+                            </span>
+                        In this context, a crucial mechanism emerges called <em>Nunchi(눈치)</em>
+                            <span class="tutorial">
+                                <img src="/content/images/돌2-26.png">
+                                <span class="fulltext">
+                                    [7]<br>허재홍 and 박원주, “눈치척도 개발 및 타당화 - 대학생 집단을 대상으로” 14, no. 6 (2013).
+                                </span>
+                            </span>
+                            <span class="tutorial">   
+                                <img src="/content/images/돌2-26.png">
+                                <span class="fulltext">
+                                    [8]<br>  According to the research by 허재홍 and 박원주 (2013), nunchi is defined as 'sensing the other person's mind or the atmosphere of the situation and taking appropriate actions.'
+                                </span>
+                            </span>
+                        in which the desire for harmony between members rather than individual prominence. Members develop skills to interpret the intentions of others and discern appropriate behaviour in various situations. Consequently, they become complacent, ensuring they align with societal expectations through 
+                        <em>nunchi</em>, preventing isolation from the majority.
+                            <span class="tutorial">   
+                                <img src="/content/images/돌2-26.png">
+                                <span class="fulltext">
+                                    [9]<br>이슬비 et al., “눈치와 자기존중감, 주관적 안녕감, 우울과 불안, 그리고 대인관계의 관계 - 한국 대학생과 일본 대학생을 대상으로-,” (2020)
+                                </span>
+                            </span>
+                        </p>
+                        <br>
+                        <p>While I once thought that I could oppose the stereotype of achievement orientation, I found it more convenient to lean on social proof and approval, especially in moments of uncertainty or self-doubt.  
+                            <span class="tutorial">   
+                                <img src="/content/images/돌2-26.png">
+                                <span class="fulltext">
+                                    [10]<br>R. B. Cialdini, Influence: The Psychology of Persuasion (Harper Business; Revised edition, 2006). 
+                                </span>
+                            </span>
+                            One straightforward way to discern what is right in a social situation is to figure out and adhere to the proposed standards.
+                            <span class="tutorial">   
+                                <img src="/content/images/돌2-26.png">
+                                <span class="fulltext">
+                                    [11]<br>Suzanne SooHoo,<br> “We Change the World by Doing Nothing,” 2004
+                                </span>
+                            </span>
+                            Social proof may benefit specific individuals. However, I realized that dominant social standards do not guarantee an individual’s well-being. Unlike conservations adhere to fixed standards, I needed to actively engage in determining what is right or wrong for myself. I suffered from society's stereotyped norms that have been learned for a few decades, and the question arose: am I willing to change? Faced with mental exhaustion, how can I resist conforming and take proactive measures?
+                        </p>
+                        <p style="text-indent: 3rem;">As mentioned earlier, my answer to those questions was putting down the shutter myself. It was a defence mechanism aimed at resisting societal propositions. While such coping mechanisms are necessary for self-preservation, indiscriminately shutting out external input that does not align with personal ideals can be perilous. It is crucial to accurately understand one's position and condition and establish personal standards for reactions. In the subsequent chapters (chapters 2 and 3), I will explore how to determine one's condition from a psychological point of view in a productivity-obsessed society.
+                        </p>
+					</div>
+				</div>
+
+				<!-- CHAPTER 2 -->
+				<div class="rellax" data-rellax-speed="-2" data-rellax-percentage="1" data-rellax-zindex="5">
+					<img class="chapter-image" src="content/images/돌2-26.png" alt="c2" width="1000">
+				</div>
+
+                <div class="chapter" id="c2">
+					<div class="text" id="chapter-2">
+						<h3 class="chapter_number">Chapter 2</h3>
+                        <h2 class="subtitle" id="c2">Psychological Barrier to Productivity</h2>
+						
+                        <p>A toxic hustle culture 
+                            <span class="tutorial">   
+                                <img src="/content/images/돌2-26.png">
+                                <span class="fulltext">
+                                    [12]<br>Emily Absher, “What You Love Is Killing You: Stopping Hustle Culture in the Performing Arts,” Texas State University, May 2020, 1–36.
+                                </span>
+                            </span>
+                            can have significant impacts on us resulting in psychological exhaustion. It is easy to see many young people today suffering from stress, depression, and burnout symptoms. To better understand these issues, I delve into why people feel guilty in this society and the concepts of mental problems and their causes.
+                        </p>
+
+                        <h4 class="chapter_number">Hustle Culture and Productivity Dysmorphia</h4>
+                        <p>Have you ever felt guilty for relaxing, even after working hard all day? Despite working full-time and feeling almost exhausted, do you still feel the need to do more? If you do, you might be dealing with ‘productivity dysmorphia,’ a term popularized by author Anna Cordrea-Lado, who describes it as “the intersection of burnout, imposter syndrome, and anxiety.”  
+                            <span class="tutorial">   
+                                <img src="/content/images/돌2-26.png">
+                                <span class="fulltext">
+                                    [13]<br>Anna Codrea-Rado, “Why Can’t I See My Own Success?,” 2023
+                                </span>
+                            </span>
+                            Productivity dysmorphia captures the feeling of not recognizing your achievements and constantly wanting to do more. Individuals grappling with productivity dysmorphia may feel a sense of shame and guilt because they perceive that they wasted time that they could have spent working.
+                        </p>
+                        <p style="text-indent: 3rem;">Highly competitive and work-oriented cultures normalize the relentless pursuit of productivity, often at the expense of other life aspects. I often received praise when I prioritized productivity over well-being. When I interned at a Korean company, I was too busy to have lunch. My team leader bought me a sandwich and said “Jiye, you're such a diligent worker, keep doing!” I think companies tend to prefer employees who take minimal breaks to accomplish the most work possible. It reinforces the idea that rest is undesirable, while constant work is virtuous. This so-called "internalized capitalism"
+                            <span class="tutorial">   
+                                <img src="/content/images/돌2-26.png">
+                                <span class="fulltext">
+                                    [14]<br>Alia E. Dastagir,<br> “If You Keep Putting Work before Health and Happiness, You May Be Suffering from Internalized Capitalism” 
+                                </span>
+                            </span>
+                            mindset forces people to work even when they desperately need a break. The problem lies in internalizing the need to be productive even during leisure time. Such habits may stem from societal pressures to find self-worth in work achievements.
+                            <span class="tutorial">   
+                                <img src="/content/images/돌2-26.png">
+                                <span class="fulltext">
+                                    [15]<br>Martin V. Covington, <br>“The Self-Worth Theory of Achievement Motivation: Findings and Implications,” (1984)</span>
+                            </span>
+                            As people increasingly value work, justifying the enjoyment of things that do not lead to productivity becomes challenging. This mindset not only hinders acknowledging and celebrating one's achievements but also constrains one's sentiment.
+                        </p>
+
+                        <h4 class="chapter_number">Stress vs. Mental Exhaustion</h4>
+                        <p><strong>Stress</strong></p>
+                        <p>There is no universal definition of stress, but the term commonly used was coined by Hans Selye in 1936. He defined it as “the non-specific response of the body to any demand for change”.
+                            <span class="tutorial">   
+                                <img src="/content/images/돌2-26.png">
+                                <span class="fulltext">
+                                    [16]<br>Kellie Marksberry, “What Is Stress?,” <br>The American Institute of Stress (blog), n.d.
+                                </span>
+                            </span>
+                            Stress is a highly subjective and personal sensation. At the end of a stressful day, one may experience fatigue, muscle tension, or headaches. Studies indicate that individuals go through three types of emotional states: eustress, distress, and sustress. The Yerkes-Dodson Law helps explain why these states occur.                            
+                        </p>
+
+                        <img src="content/images/Yerkes-Dodson law.png" alt="Yerkes-Dodson Law" width="1000"  style="width:100%" />
+						<figcaption>Figure 2. The Yerkes-Dodson law</figcaption>
+
+                        <p style="text-indent: 3rem;">As depicted above, there exists external pressure known as eustress. The optimal level for arousal lies at low to moderate stress, resulting in enhanced productivity. This form of stress is perceived more as heightened attention fueled by positive energy.
+                            <span class="tutorial">   
+                                <img src="/content/images/돌2-26.png">
+                                <span class="fulltext">
+                                    [17]<br>University of Georgia, <br>“Some Types of Stress Could Be Good for Brain Functioning,” 2022
+                                </span>
+                            </span>
+                            This 'good' stress acts as a potent motivator, propelling us toward peak performance before a significant decline occurs.
+                            <span class="tutorial">   
+                                <img src="/content/images/돌2-26.png">
+                                <span class="fulltext">
+                                    [18]<br>  Amishi P. Jha, Peak Mind: Find Your Focus, Own Your Attention, Invest 12 Minutes a Day (HarperOne, 2021).
+                                </span>
+                            </span>
+                            However, if stress exceeds a peak, one falls into distress – what we commonly call stress. Distress is useful in emergencies when you require quick action, but the more severe and lasting it is, the lower your performance and well-being can be. The individual variability in determining this peak necessitates recognition of early warning symptoms that indicate approaching the threshold. 
+                        </p><br>
+                        <p><strong>Mental Exhaustion</strong></p>
+                        <p>We all encounter stress, which is the body's reaction to new, scary, or worrisome situations. Mental exhaustion, however, is a symptom of long-term stress. Consistently grappling with stress-inducing factors leads to a sustained elevation of specific hormone mixtures, eventually disrupting normal bodily functions such as digestion, sleep, the immune system, etc.
+                        </p>
+                        <p style="text-indent: 3rem;">Mental exhaustion or "burnout" is a term commonly used to describe feeling overwhelmed or stressed, often related to work but potentially arising from prolonged stress in any facet of life. It can encompass work, family life, or a combination. In addition, physical fatigue, chronic illnesses, and injuries can contribute to mental exhaustion in individuals. 
+                        </p>
+
+                        <div class="imgpar">
+							<div class="imginpar">
+								<div class="rellax" data-rellax-speed="-3" data-rellax-percentage="1" data-rellax-mobile-percentage="0.1"
+									data-rellax-zindex="5" data-rellax-mobile-speed="-1">
+									<img src="content/images//chp2_contemplating_new.jpeg" alt="recipie" width="1099" />
+									<figcaption>Figure 3. contemplating new by Iqi Qoror</figcaption>
+								</div>
+							</div>
+							<div class="textinpar">
+                                <br>
+                                <p>Dr. Adia Gooden, a clinical psychologist, mentioned in an interview "We're just used to being busy. We live in a society that values productivity and output," which can make relaxation uncomfortable. I used to fear that others would consider me unproductive if I did not work for a day. Regarding this, I needed to find out my underlying guilt and "core fear" that Dr. Neil-Bennett calls. It was crucial to judge stressful situations objectively, distinguishing whether they were beneficial to me or if they were chronic issues. To be clear, I do not believe that toxic productivity and societal norms always lead to mental exhaustion. This is especially true when one is aware of experiencing a certain stress level early on and has appropriate mechanisms to overcome it.
+                                </p>
+                                <p style="text-indent: 3rem;">I think many people struggle to find ways to cope with stress. Individuals struggling to enhance their motivation due to mental exhaustion are often perceived as being trapped in their world, shutting themselves off from external influences. However, MRI diagnoses show that their brains overreact to outer surroundings.
+                                    <span class="tutorial">   
+                                        <img src="/content/images/돌2-26.png">
+                                        <span class="fulltext">
+                                            [19]<br>가토 도시노리, 아무것도 하기 싫은 사람을 위한 뇌 과학, trans. 정현옥, n.d.
+                                        </span>
+                                    </span>
+                                    They may feel uneasy and frequently express thoughts such as 'I want to do things my way' or 'I am incompetent.' In contrast, those with a well-established mindset can navigate challenges without self-destructing. Furthermore, I will explore psychological research from the perspective of cognitive change on how they have acquired ways to reduce stress and protect themselves.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+
+				<!-- CHAPTER 3 -->
+                <div class="rellax" data-rellax-speed="-2" data-rellax-percentage="1" data-rellax-zindex="5">
+					<img class="chapter-image" src="content/images/돌2-26.png" alt="c3" width="1000">
+				</div>
+
+                <div class="chapter" id="c3">
+                    <div class="text" id="chapter-3">
+                        <h3 class="chapter_number">Chapter 3</h3>
+                        <h2 class="subtitle" id="c3">Resistance to Change Exposed in Individuals' Cognition and Behaviors</h2>
+                            
+                        <p>Extensive research indicates the impact of psychosocial stress on the development of lifelong psychiatric symptoms in individuals. There is evidence that cognitive functions mediate this link. When stress is perceived to exceed one's control, its impact can be chronic and detrimental to both brain and cognitive functions, leading to an increased risk of psychopathology.
+                            <span class="tutorial">   
+                                <img src="/content/images/돌2-26.png">
+                                <span class="fulltext">
+                                    [20]<br>Assaf Oshri et al., <br>“Is Perceived Stress Linked to Enhanced Cognitive Functioning and Reduced Risk for Psychopathology? Testing the Hormesis Hypothesis,” (2022)
+                                </span>
+                            </span>
+                            Initially, individuals cognitively assess and interpret stress. This step entails evaluating the cognitive threat of the individual's perception and determining the degree of control they have over these stressors.
+                            <span class="tutorial">   
+                                <img src="/content/images/돌2-26.png">
+                                <span class="fulltext">
+                                    [21]<br>Lauren E. Chaby, <br>“Why Are There Lasting Effects from Exposure to Stress during Development? An Analysis of Current Models of Early Stress,” (2016)
+                                </span>
+                            </span>
+                            In that process, individuals undergo their cognitive attitudes toward changes. Let's examine more specifically through the following contents.
+                        </p>
+                        <h4 class="chapter_number">Changes according to Cognitive Dissonance</h4>
+                        <p>When individuals experience the psychological stress of discomfort they undergo is referred to as “cognitive dissonance”,
+                            <span class="tutorial">   
+                                <img src="/content/images/돌2-26.png">
+                                <span class="fulltext">
+                                    [22]<br>Cognitive dissonance is typically experienced as psychological stress of discomfort when persons experience a state of imbalance. The discomfort is triggered by the person’s beliefs conflicting with the other ones.
+                                </span>
+                            </span>
+                            they tend to change their cognition to resolve such discrepancies.
+                            <span class="tutorial">   
+                                <img src="/content/images/돌2-26.png">
+                                <span class="fulltext">
+                                    [23]<br> Festinger, L, “A Theory of Cognitive Dissonance,” 1957.
+                                </span>
+                            </span>
+                        </p>
+                        <img src="content/images/2-Cognitive-Dissonance-Theory-Adopted-fromFestiger-1957.png" alt="dissonance" width="1000"  style="width:100%" />
+						<figcaption>Figure 4. Wiafe, Issac. “A Framework for Designing Persuasive Technology – Scientific Figure on Research Gate,” n.d.</figcaption>
+                        <p>The theory proposed that to alleviate mental stress caused by cognitive dissonance, individuals seek psychological consistency through actions that diminish the conflict's intensity. This can involve adapting to, justifying against, or adopting an indifferent attitude toward the underlying contradiction causing mental distress.
+                            <span class="tutorial">   
+                                <img src="/content/images/돌2-26.png">
+                                <span class="fulltext">
+                                    [24]<br> Festinger, L.
+                                </span>
+                            </span>
+                            In practical terms, consider a stressful situation in the hustle culture discussed earlier. Imagine you pledged to work harder in an achievement-oriented society. However, you find yourself not exerting any effort and achieving nothing. To reduce the cognitive dissonance, you may employ the strategies known as self-justification:
+                        </p>
+                        <div class="c3-list" id="c3-list">
+                            <ol>
+                                <li>Change the behaviour: <br>I’ll work even harder without taking breaks.</li>
+                                <li>Justify the cognition: <br>I’m allowed to cheat on my work in a while.</li>
+                                <li>Justify the cognition by adding new behaviour: <br>Taking a break is acceptable.</li>
+                                <li>Ignore or deny information that conflicts with existing beliefs: <br>Working hard is bad. And doing nothing is good.</li>
+                              </ol>
+                        </div>
+                        <p style="text-indent: 3rem;">I believe that self-compassion has an impact on self-justification. Self-compassion entails treating oneself with kindness during moments of pain or failure and maintaining a balanced awareness amidst challenging thoughts and emotions. It represents a warm and receptive attitude toward oneself, even in the aspects of life that one dislikes, and consists of three components.
+                            <span class="tutorial">   
+                                <img src="/content/images/돌2-26.png">
+                                <span class="fulltext">
+                                    [25]<br>Kristin D. Neff, Stephanie S. Rude, and Kristin L. Kirkpatrick, “An Examination of Self-Compassion in Relation to Positive Psychological Functioning and Personality Traits,” (2007)
+                                </span>
+                            </span>
+                            First, it includes being kind and understanding to oneself in situations of suffering or perceived inadequacy. It also involves a communal sense of humanity that recognizes that pain and failure are inevitable parts of human experiences. Lastly, self-compassion encompasses a balanced awareness of one's emotions — the ability to face distressing thoughts and feelings without exaggeration.
+                        </p>
+                        <p style="text-indent: 3rem;">On the other hand, it is crucial not to be excessively lenient with self-compassion to the extent that it leads to self-sabotage. Susan Anderson states that “we sabotage ourselves in reaction to wounded and powerless early feelings”.
+                            <span class="tutorial">   
+                                <img src="/content/images/돌2-26.png">
+                                <span class="fulltext">
+                                    [26]<br>Susan Anderson, Taming Your Outer Child: Overcoming Self-Sabotage and Healing from Abandonment, (2015).
+                                </span>
+                            </span>
+                            For example, when I feel unintelligent, the anti-self
+                            <span class="tutorial">   
+                                <img src="/content/images/돌2-26.png">
+                                <span class="fulltext">
+                                    [27]<br>Robert W. Firestone, Lisa Firestone, and Joyce Catlett, The Self Under Siege: A Therapeutic Model for Differentiation, 1st edition (Routledge, 2012).
+                                </span>
+                            </span>
+                            — the inner enemy formed a critical voice — adopts perspectives that reinforce how worthless I am. This internal critic sometimes became a nagging voice to ruin my plan and dismissed me as unworthy of doing whatever I wanted. I suppose that the core of self-sabotage is rooted in fear — fear of rejection, change, unknown, etc. These could trap me in procrastination, hindering progress toward my goals.
+                        </p>
+                        <h4 class="chapter_number">Resistance Mechanism as a Means of Control</h4>
+                        <p>I assume that most people aim to create positive and constructive changes, but they might come up against confronting their defeatist behaviours. Perhaps you have decided to study, work, and succeed even harder. However, you find yourself postponing or avoiding the things you knew would make your life better. In behavioural psychology, this phenomenon is called 'resistance'.
+                            <span class="tutorial">   
+                                <img src="/content/images/돌2-26.png">
+                                <span class="fulltext">
+                                    [28]<br>  Lena M. Forsell and Jan A. Åström, “An Analysis of Resistance to Change Exposed in Individuals’ Thoughts and Behaviors,” Comprehensive Psychology 1 (January 1, 2012): 09.02.10.CP.1.17, https://doi.org/10.2466/09.02.10.CP.1.17.
+                                </span>
+                            </span>
+                            It stems from a psychological response to change, akin to a self-protection mechanism that opposes alterations in one's preferred behaviour.
+                        </p>
+                        <p style="text-indent: 3rem;">These mechanisms ultimately need to include appropriate resistant means of changing an individual's cognition, all while preventing the actor from falling into self-sabotage. A good example of this is the participatory performance in Korea known as the 'Space-out Competition.' 
+                            <span class="tutorial">   
+                                <img src="/content/images/돌2-26.png">
+                                <span class="fulltext">
+                                    [29]<br><em>[Playlife] 누구나 멍때릴 시간이 필요해요 - 작가 웁쓰양, </em>2022</span>
+                            </span>
+                            Initially, the competition posed the question to busy people, “Is doing nothing a waste of time?” The competition organizer, the artist Woopsyang said, “Many people continue to live hectic lives. A spacing-out competition was held with the idea: if you feel anxious about doing nothing alone, what if we all do it together?” When I heard about this competition at first, I thought the competition name sounded weird. However, the naming purpose intended to assign value to the activity of doing nothing by transforming it into a goal-oriented endeavour. Additionally, it seeks to create a visual contrast between the lives of busy people and the group that shamelessly does nothing.
+                            <span class="tutorial">   
+                                <img src="/content/images/돌2-26.png">
+                                <span class="fulltext">
+                                    [30]<br><em>[Playlife] 누구나 멍때릴 시간이 필요해요 - 작가 웁쓰양.</em>
+                                </span>
+                            </span>
+                        </p>
+                        
+                        <img src="content/images/멍때리기대회.jpeg" alt="dissonance" width="1000"  style="width:80%" />
+						<figcaption>Figure 5-1. "Space-out Competition" held in Seoul (2023)</figcaption>
+                        
+                        <div class="imgpar">
+							<div class="imginpar">
+								<div class="rellax" data-rellax-speed="-3" data-rellax-percentage="1" data-rellax-mobile-percentage="0.1"
+									data-rellax-zindex="5" data-rellax-mobile-speed="-1">
+									<img src="content/images/멍때리기 한강.jpeg" alt="recipie" width="1099" />
+									<figcaption>Figure 5-2. "Space-out Competition" (2022)</figcaption>
+								</div>
+							</div>
+							<div class="textinpar">
+                                <p>It is not surprising that many people carry worries like "I'm struggling to manage my schedule," "Stress is not released due to work," and "I feel the need to do something even on my days off." While living a stressful life, our well-being deteriorates. At this point, I would suggest adopting a fresh perspective that welcomes and accepts the act of 'doing nothing.' If there was a prejudice that doing nothing was considered a time-wasting activity in the past, the current perspective of it should be reinterpreted.
+                                </p>
+                                <p style="text-indent: 3rem;">By building a method of "doing nothing" into your days, you can better balance your stress levels by leveraging your "resistance" reactions. These reactions entail achieving harmony between oneself and productivity by deliberately engaging in the practice of doing nothing. This approach may also assist you in establishing better boundaries between times of relaxation and concentration. Doing nothing is still considered to be something new and irregular. Does it work? For some, it does. For others, perhaps not. It all depends on the individual and whether they can find solace from the constant chaos of modern life through this method. In the upcoming chapter, I will introduce the aesthetics of 'Doing nothing' and ways to incorporate it into your life so that you can practice it without guilt.
+                                </p>                               
+                            </div>
+                        </div>
+					</div>
+				</div>
+
+				<!-- CHAPTER 4 -->
+                <div class="rellax" data-rellax-speed="-2" data-rellax-percentage="1" data-rellax-zindex="5">
+					<img class="chapter-image" src="content/images/돌2-26.png" alt="c4" width="1000">
+				</div>
+
+                <div class="chapter" id="c4">
+					<div class="text" id="chapter-4">
+						<h3 class="chapter_number">Chapter 4</h3>
+                        <h2 class="subtitle" id="c4">Seeking Balance through <br>Doing Nothing</h2>
+
+                        <p>In a productivity-oriented society, we might experience the harmful effects of productivity-driven mindsets on mental well-being. Those results can change an individual’s cognition in a worse way. In that context, it is crucial to recognize that the resulting mental struggles are problematic when they interfere with moments we want to focus on work or relaxation. As we need downtime to recharge and resume productivity, choosing to do nothing can signify achieving balance in our lives.
+                        </p>
+                        <h4 class="chapter_number">Rebranding of ‘Doing Nothing’</h4>
+                        
+                        <div class="imgpar">
+							<div class="imginpar">
+								<div class="rellax" data-rellax-speed="-2.5" data-rellax-percentage="1" data-rellax-mobile-percentage="0.1"
+									data-rellax-zindex="5" data-rellax-mobile-speed="-1">
+									<img src="content/images/sohwakhaeng1.jpg" alt="so-hwak-haeng" width="1099" />
+								</div>
+                                <div class="rellax" data-rellax-speed="-3" data-rellax-percentage="1" data-rellax-mobile-percentage="0.1"
+									data-rellax-zindex="5" data-rellax-mobile-speed="-1">
+									<img src="content/images/sohwakhaeng2.jpg" alt="so-hwak-haeng" width="1099" />
+                                    <figcaption>Figure 6. Artwork about so-hwak-haeng by Jiye Kim, 2022</figcaption>
+								</div>
+                            </div>
+							<div class="textinpar">
+                                <p>The concept of "doing nothing" is not entirely foreign to us. Similar terms or attitudes towards life can be found across various countries. First, there was 
+                                    <em>la dolce far niente</em>, an Italian expression meaning the sweetness of doing nothing, popularized by the movie "Eat Pray Love." The Danish introduced us to 
+                                    <em>hygge</em>, which involves stepping away from the daily hustle to relax and enjoy quiet pleasures either alone or with loved ones. Then, Koreans have a concept called 
+                                    <em>so-hwak-haeng</em>, which translates as finding small but certain happiness in life. There is another emerging trend to counteract busy and stressful lifestyles, 
+                                    <em>niksen</em>, which simply involves the concept of doing nothing in the Netherlands.
+                                </p> 
+                                <p style="text-indent: 3rem;">A sociologist Rutt Veenhoven, who is a director of the World Database of Happiness, said “The pace of life today is fast because there is much to enjoy.” He added, “Niksen provides a relief for people who feel overwhelmed by the pace. It is also an attractive idea for those who are not overwhelmed, but still feel the pressure, too.”
+                                    <span class="tutorial">   
+                                        <img src="/content/images/돌2-26.png">
+                                        <span class="fulltext">
+                                            [31]<br>Susan Devaney, “What Is Niksen? The Dutch Lifestyle Concept That Allows Us To Do Nothing,” British Vogue, 2019
+                                        </span>
+                                    </span>
+                                    The benefit of doing nothing is that it can help generate new ideas. According to Veenhoven, “Even when we do nothing, our brain is still processing information and can use the available processing power to solve pending problems.”
+                                    <span class="tutorial">   
+                                        <img src="/content/images/돌2-26.png">
+                                        <span class="fulltext">
+                                            [32]<br>Sophia Gottfried, <br>“Niksen Is the Dutch Lifestyle Concept of Doing Nothing—And You’re About to See It Everywhere,” TIME, 2019
+                                        </span>
+                                    </span>
+                                </p>
+                                <div class="quote">
+                                    <p class="quote">“If you remain focused all the time — constantly doing, doing, doing — you’re not allowing yourself into that mode that will actually lead to the greatest creativity that you have.”
+                                        <br>by Emma Seppälä
+                                        <span class="tutorial">   
+                                            <img src="/content/images/돌2-26.png">
+                                            <span class="fulltext">
+                                                [33]<br>Kevin Dickinson, “Ease Productivity Overload with ‘Niksen,’ the Dutch Art of Doing Nothing,” (2023)
+                                            </span>
+                                        </span>
+                                    </p>
+                                </div>                                                 
+                            </div>
+                        </div>
+                        <p style="text-indent: 3rem;">Furthermore, without relaxation, our bodies and brains cannot function optimally. Meaningful relaxation called doing nothing can help reduce stress. In a hectic society, we live with the "internalized capitalism" mindset,
+                            <span class="tutorial">   
+                                <img src="/content/images/돌2-26.png">
+                                <span class="fulltext">
+                                    [34]<br>Alia E. Dastagir, “If You Keep Putting Work before Health and Happiness, You May Be Suffering from Internalized Capitalism.”
+                                </span>
+                            </span>
+                            prolonged stress can undermine your achievements and well-being. Dr. Herbert Benson's research suggests that people can cope with stress by using a combination of approaches that elicit a rest response.
+                            <span class="tutorial">   
+                                <img src="/content/images/돌2-26.png">
+                                <span class="fulltext">
+                                    [35]<br>“Understanding the Stress Response,” <em>Harvard Health</em>, 2020
+                                </span>
+                            </span>
+                        </p>
+                        <p style="text-indent: 3rem;">The term "work-life balance" is commonly discussed about managing work and personal time. Initially, I misunderstood it as a mockery of relaxation. Because it denotes an imbalance favouring work over personal life from the negative connotations in Korea. Many mistakenly perceive work and life as distinct entities that should be balanced equally. However, the more we attempt to compartmentalize them, the more inclined we become to seek pleasure outside of work, thus perceiving work negatively and life positively.                           
+                        Therefore, I have reconceptualized balance by integrating the practice of Doing Nothing into my life. "There's no need to separate work and life." It is designing situations where I add or remove something from a work-patterned state to give myself new tasks or changes unrelated to work. The things which you can perform only with the knowledge or skills you have is appropriate. This serves as a safeguard against stress or mannerisms regardless of work, aligning with my redefined concept of doing nothing that I am advocating.
+                        </p>
+
+                        <h4 class="chapter_number">How to ‘Do Nothing’</h4>
+                        <p>Practicing doing nothing involves simply idling without any productive intent or purpose for a brief period. It may look easy, but it is much more challenging. There is no one-size-fits-all advice for learning how to do nothing, but here are some ways to make it more comfortable:
+                        </p>
+                        <p style="text-indent: 3rem;">Primarily, addressing feelings of shame that some individuals may experience when not being highly productive or when taking breaks is essential. Chris Bailey, a productivity expert, claims that "we feel guilty when our actions don’t align with our values and that a solution to the guilt could be to learn to value doing nothing and relaxation."
+                            <span class="tutorial">   
+                                <img src="/content/images/돌2-26.png">
+                                <span class="fulltext">
+                                    [36]<br>Olga Mecking, Do something good for yourself — nothing, interview by Lisa Selin Davis, 2021
+                                </span>
+                            </span>
+                            If you have trouble relaxing because you fear disappointing others or yourself, consider the kind of presence you want to offer to them. Making space for self-care allows you to be helpful. It is not about redefining yourself in a positive light compared to being negative; it allows you to reframe it as unproductive, half-hearted or any other negative adjective. This process is tough, and negative emotions may pop out. Instead of fighting or ignoring them, I recommend embracing tough things. Allowing these emotions to exist is not only crucial for dealing with them but also for finding comfort. Awareness of “negative space”
+                            <span class="tutorial">   
+                                <img src="/content/images/돌2-26.png">
+                                <span class="fulltext">
+                                    [37]<br>The concept of negative space signifies in medicine what is not seen, not heard, not felt, or otherwise not done or experienced.
+                                </span>
+                            </span>
+                            <span class="tutorial">   
+                                <img src="/content/images/돌2-26.png">
+                                <span class="fulltext">
+                                    [38]<br>Stephen A. Buetow, “Something in Nothing: Negative Space in the Clinician-Patient Relationship,” <em>Annals of Family Medicine</em> (2009)
+                                </span>
+                            </span>
+                            helps to open new possibilities. Most people consume cognitive resources and skills to interpret and judge the "positive space" of thoughts. But what about the opposite? I believe negative spaces in our thoughts can also exist. Thinking about it can open a new understanding of well-being and reveal opportunities that individuals control.
+                        </p>
+                        <p style="text-indent: 3rem;">Once you have accepted negative spaces in your thoughts, it is time to create "cracks in time" in your life patterns and behaviours. Most people commute and work simultaneously every day, making it difficult for the brain to receive new stimuli.
+                            <span class="tutorial">   
+                                <img src="/content/images/돌2-26.png">
+                                <span class="fulltext">
+                                    [39]<br>가토 도시노리, <em>아무것도 하기 싫은 사람을 위한 뇌 과학.</em>
+                                </span>
+                            </span>
+                            To increase stimuli, you need to change your lifestyle pattern. For instance, changing the routine of starting the day, such as jogging or meditating before heading to work, can be beneficial. Alternatively, even if you do the same tasks, setting specific start and end times can be efficient for you. When tasks are allocated specific time slots, it fosters concentration (boosting arousal levels), thereby enabling the brain and body to handle a substantial workload throughout the day. Meanwhile, it can be overwhelming for a lethargic person to suddenly increase their level of activity. In such cases, a possible approach is to change the position of a desk. The position or arrangement of furniture and other items generally remains unchanged for prolonged periods in homes. Occasional changes in location or structure can increase efficiency by shortening the movement or bringing about a change in mood. If you change the desk position, you should rearrange the other items accordingly. It will help keep your brain active at a high level if this series of tasks can create new desires or spark other interests.
+                        </p>
+                        <p style="text-indent: 3rem;">These acts of doing nothing can be done anytime, anywhere, and even alone. There is no need for unnecessary effort or preparation; it can be seamlessly integrated into our busy daily lives. Perhaps 'Doing nothing' feels uncomfortable until you get used to it. Therefore, practice is necessary, and as you become accustomed to it and it becomes a habit, you will gradually feel good about it. It is an important life skill to find the balance between busyness and rest.
+                        </p>
+					</div>
+				</div>
+
+                <!-- Conclusion -->
+                <!-- <div class="rellax" data-rellax-speed="2" data-rellax-percentage="1" data-rellax-zindex="5">
+					<img class="chapter-image" src="content/images/돌2-26.png" alt="c4" width="1000">
+				</div> -->
+
+                <div class="chapter" id="con">
+					<div class="text" id="con">
+                        <h2 class="subtitle" id="con">Conclusion</h2>
+                        <p>The inception of my thesis stemmed from a personal question: "What is the meaning of doing nothing?" This question was sparked by my experiences within a productivity-oriented society. Under the pressure to constantly achieve, I found myself grappling with stress and difficulty in relaxing. Through observing the pervasive influence of productivity dysmorphia, I noted that individuals often feel guilty about taking breaks, even when they have completed sufficient work. As society increasingly glorifies work, individuals may consequently experience heightened levels of stress and mental exhaustion. However, with adequate coping mechanisms in place, this burden can be alleviated. In my research journey, I encountered numerous psychological experts who researched the correlation between stress and cognitive changes. Their studies revealed that individuals undergo cognitive dissonance when their personal beliefs conflict with social propositions, leading to behaviours such as self-justification, self-compassion, and self-sabotage. To prevent them from falling into the danger of self-sabotage, there is a need for means to change individuals' cognition so that they can resist social propositions appropriately. My proposal advocates for a reinterpretation and acceptance of the concept of doing nothing. This entails incorporating intervals of slight change within a busy day. Doing nothing is not about something new; rather, it involves striking a balance between busyness and rest by modifying existing tasks.
+                        </p>
+                    </div>
+                </div>
+
+				<!-- Bibliography -->				
+                <h3 class="chapter_number" id="biblio">Bibliography</h3>	
+                <div class="bio">				
+					<p>Absher, Emily. “What You Love Is Killing You: Stopping Hustle Culture in the Performing Arts.” Texas State University, May 2020, 1–36.</p>
+                    <p>Alia E. Dastagir. “If You Keep Putting Work before Health and Happiness, You May Be Suffering from Internalized Capitalism.” USA TODAY. Accessed January 7, 2024. https://www.usatoday.com/story/life/health-wellness/2021/06/17/internalized-capitalism-harms-mental-health-productivity/7723416002/.</p>	
+                    <p>Amishi P. Jha. Peak Mind: Find Your Focus, Own Your Attention, Invest 12 Minutes a Day. HarperOne, 2021.</p>
+                    <p>Buetow, Stephen A. “Something in Nothing: Negative Space in the Clinician-Patient Relationship.” Annals of Family Medicine 7, no. 1 (January 2009): 80–83. https://doi.org/10.1370/afm.914.</p>
+                    <p>Chaby, Lauren E. “Why Are There Lasting Effects from Exposure to Stress during Development? An Analysis of Current Models of Early Stress.” Physiology & Behavior 164 (October 2016): 164–81.</p>
+                    <p>Cialdini, R. B. Influence: The Psychology of Persuasion. Harper Business; Revised edition, 2006.</p>
+                    <p>Codrea-Rado, Anna. “Why Can’t I See My Own Success?,” August 11, 2023. https://annacodrearado.substack.com/p/why-cant-i-see-my-own-success.</p>
+                    <p>Covington, Martin V. “The Self-Worth Theory of Achievement Motivation: Findings and Implications.” The University of Chicago Press 85, no. 1 (September 1984): 5–20.</p>
+                    <p>Festinger, L. “A Theory of Cognitive Dissonance.” California: Stanford University Press, 1957.</p>
+                    <p>Forsell, Lena M., and Jan A. Åström. “An Analysis of Resistance to Change Exposed in Individuals’ Thoughts and Behaviors.” Comprehensive Psychology 1 (January 1, 2012): 09.02.10.CP.1.17. https://doi.org/10.2466/09.02.10.CP.1.17.</p>
+                    <p>Harvard Health. “Understanding the Stress Response.” July 6, 2020. https://www.health.harvard.edu/staying-healthy/understanding-the-stress-response.</p>
+                    <p>Kevin Dickinson. “Ease Productivity Overload with ‘Niksen,’ the Dutch Art of Doing Nothing.” Big Think (blog), February 13, 2023. https://bigthink.com/the-learning-curve/niksen/.</p>
+                    <p>Marksberry, Kellie. “What Is Stress?” The American Institute of Stress (blog), n.d. https://www.stress.org/what-is-stress.</p>
+                    <p>Neff, Kristin D., Stephanie S. Rude, and Kristin L. Kirkpatrick. “An Examination of Self-Compassion in Relation to Positive Psychological Functioning and Personality Traits.” Journal of Research in Personality 41, no. 4 (August 2007): 908–16.</p>
+                    <p>Noelle-Neumann, Elisabeth. The Spiral of Silence: Public Opinion - Our Social Skin. The University of Chicago Press, 1984.</p>
+                    <p>Olga Mecking. Do something good for yourself — nothing. Interview by Lisa Selin Davis, September 25, 2021. https://www.cnn.com/2021/09/25/health/doing-nothing-wellness/index.html.</p>
+                    <p>Oshri, Assaf, Zehua Cui, Cory Carvalho, and Sihong Liu. “Is Perceived Stress Linked to Enhanced Cognitive Functioning and Reduced Risk for Psychopathology? Testing the Hormesis Hypothesis.” Psychiatry Research 314 (August 2022): 114644.</p>
+                    <p>[Playlife] 누구나 멍때릴 시간이 필요해요 - 작가 웁쓰양, 2022. https://www.youtube.com/watch?v=emAWq_Rfxmg.</p>
+                    <p>Robert W. Firestone, Lisa Firestone, and Joyce Catlett. The Self Under Siege: A Therapeutic Model for Differentiation. 1st edition. Routledge, 2012.</p>
+                    <p>SooHoo Suzanne. “We Change the World by Doing Nothing,” 31(1), 2004, 199–211.</p>
+                    <p>Sophia Gottfried. “Niksen Is the Dutch Lifestyle Concept of Doing Nothing—And You’re About to See It Everywhere.” TIME, July 12, 2019. https://time.com/5622094/what-is-niksen/.</p>
+                    <p>Susan Anderson. Taming Your Outer Child: Overcoming Self-Sabotage and Healing from Abandonment. Reprint edition. New World Library, 2015.</p>
+                    <p>Susan Devaney. “What Is Niksen? The Dutch Lifestyle Concept That Allows Us To Do Nothing.” British Vogue, July 21, 2019. https://www.vogue.co.uk/article/what-is-niksen-do-nothing-trend-dutch.</p>
+                    <p>University of Georgia. “Some Types of Stress Could Be Good for Brain Functioning.” ScienceDaily, July 28, 2022. https://www.sciencedaily.com/releases/2022/07/220728143014.htm.</p>
+                    <p>가토 도시노리. 아무것도 하기 싫은 사람을 위한 뇌 과학. Translated by 정현옥, n.d.</p>
+                    <p>이슬비, 허재홍, 이재억, 浅田 剛正, and 坂東希. “눈치와 자기존중감, 주관적 안녕감, 우울과 불안, 그리고 대인관계의 관계 -한국 대학생과 일본 대학생을 대상으로-.” 상담학연구 21, no. 2 (2020): 291–314.</p>
+                    <p>조선영, 이누미야 요시유키, 한성열, and 木村裕. “한일대학생의 대인불안 규정요인의 비교: 공적자기의식, 자아존중감, 정을 중심으로” 19, no. 1 (2005): 1–12.</p>
+                    <p>지표서비스, e-나라지표. “취학률 및 진학률,” 2022. https://www.index.go.kr/unity/potal/main/EachDtlPageDetail.do?idx_cd=1520.</p>
+                    <p>한국문화원(Korean Cultural Centre). “세계 속의 한국 경제-한강의 기적.” 세계 속의 한국 경제-한강의 기적. Accessed January 6, 2024. https://kccuk.org.uk/ko/about-korea/economy/the-korean-economy-the-miracle-on-the-hangang-river/.</p>
+                    <p>허재홍. “눈치가 안녕감과 대인관계에 미치는 영향.” 상담학연구 15, no. 3 (2014): 1067–84.</p>
+                    <p>허재홍 and 박원주. “눈치척도 개발 및 타당화 - 대학생 집단을 대상으로” 14, no. 6 (2013).</p>
+                </div>
+
+			</div>
+	    </main>
+	</div>
+
+
+	<footer>
+
+		<hr>
+
+		<!-- <p>
+			Last edit date: 1/04/2022
+			© Agnar Freyr Stefánsson 2022
+		</p> -->
+
+	</footer>
+
+	<!-- end webpage content -->
+
+
+
 </body>
+
 </html>
