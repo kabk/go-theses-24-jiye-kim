@@ -32,7 +32,7 @@ $( document ).ready( function( ) {
 			navbar.classList.remove("sticky");
 
 			document.getElementById("navbar").innerHTML = 
-			'<ul> <li><a href="#intro">Introduction</a></li> <li><a href="#c1"><strong>1</strong> <br> In the Shadows of Achievement</a></li> <li><a href="#c2"><strong>2</strong> <br> Psychological Barrier to Productivity</a></li> <li><a href="#c3"><strong>3</strong> <br> Resistance to Change Exposed in Individuals Cognition and Behaviors</a></li> <li><a href="#c4"><strong>4</strong> <br> Seeking Balance through Doing Nothing</a></li> <li><a href="#con">Conclusion</a></li> <li><a href="#Bibliography">Bibliography</a></li> </ul>';
+			'<ul> <li><a href="#intro">Introduction</a></li> <li><a href="#c1"><strong>1</strong> <br> In the Shadows of Achievement</a></li> <li><a href="#c2"><strong>2</strong> <br> Psychological Barrier to Productivity</a></li> <li><a href="#c3"><strong>3</strong> <br> Resistance to Change Exposed in Individuals’ Cognition and Behaviors</a></li> <li><a href="#c4"><strong>4</strong> <br> Seeking Balance through Doing Nothing</a></li> <li><a href="#con">Conclusion</a></li> <li><a href="#Bibliography">Bibliography</a></li> </ul>';
 
 			// subtitle.classList.remove("sticky");
 		}
