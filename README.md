@@ -1,3 +1,3 @@
-#This is my Thesis website for KABK Spring 2022
+#This is my Thesis website for KABK 2024
 
-Made by Agnar Freyr Stefánsson
+Made by Jiye Kim
