@@ -27,6 +27,7 @@ html {
   color: var(--color-text);
   background-color: var(--color-background);
   scroll-behavior: smooth;
+  width: 100%;
 }
 
 body {
@@ -36,7 +37,7 @@ body {
   color: var(--color-text);
   width:100%;
   height:100%;
-  overflow-y:auto;
+  overflow-y: auto;
   overflow-x: hidden;
 }
 
@@ -63,7 +64,7 @@ a:focus-visible {
   font-weight: 400;
   /* font-style: italic; */
   line-height: 8rem;
-  margin-bottom: 0;
+  margin-bottom: 40rem;
   z-index: 1;
   }
 
@@ -124,7 +125,6 @@ p{
   font-family: 'Hahmlet', serif;
   font-size: 0.6rem;
   line-height: 1rem;
-  text-indent: 0rem;
   /* box-sizing: border-box; */
   width: 20vw;
   max-height: 25vh;
@@ -137,10 +137,10 @@ p{
   transition: opacity 0.3s;
   z-index: 2;
 }
-/* .fulltext {
-  visibility: none; opacity: 0;
-  transition: opacity 0.3s;
-} */
+.tutorial .fulltext {
+  visibility: hidden;
+}
+
 .tutorial:hover .fulltext {
 visibility: visible;
 opacity: 1;
@@ -155,22 +155,14 @@ opacity: 1;
 }
 
 ul{
-  /* ordered list and unordered list styles */
   list-style-type: none;
 }
 
 ol{
-  /* ordered list and unordered list styles */
   /* list-style-type: none; */
 }
 
-blockquote{
-  /* blockquote element style */
-}
 
-hr{
-  /* horizontal rule style */
-}
 
 .navigation{
   text-align: center;
@@ -223,10 +215,6 @@ margin-left: 1rem;
 
 
 
-.sticky + main {
-}
-
-
 /* PAGE STYLES */
 
 /* page structure */
@@ -234,7 +222,6 @@ margin-left: 1rem;
 div.page-wrapper {
   /* the element that 'wraps' everything */
   padding: var(--margin);
-  /* background: linear-gradient(180deg, transparent 90%, yellow 93%, green 96%); */
 }
 
 /* navigation */
@@ -250,7 +237,7 @@ header{
 }
 
 .title{
-  margin-bottom: 45rem;
+  /* margin-bottom: 35rem; */
   padding-top: 10vh;
 }
 
@@ -286,34 +273,17 @@ header{
 main{
   position: relative;
   float: center;
-  margin-left: 2%;
-  margin-right: 2%;
+  /* margin-left: 2%;
+  margin-right: 2%; */
 }
 .container{
   width: 100%;
   margin-top: 10rem;
 }
 
-/* .footnotes{
-  order: 1;
-  position: sticky;
-  top: 0;
-  height: 100%;
-  padding-top: 8.5rem;
-  width: 25vw;
-  font-size: 0.8rem;
-} */
-
-/* .footnote{
-  margin-bottom: 1rem;
-} */
-
-/* #f1{
-} */
-
 footer{
   position: relative;
-  /* width: 100%; */
+  width: 100%;
   float: left;
 }
 
@@ -470,18 +440,21 @@ figcaption{
 }
 
 .bio {
-  /* padding: var(--margin); */
+  padding: var(--margin);
   margin-left: 10%;
   margin-right: 10%;
-  margin-bottom: 15rem;
+  margin-bottom: 10rem;
   column-count: 3;
+  overflow-wrap: break-word;
+  column-gap: 65px;
 }
 
 .bio p {
   font-size: 0.5rem;
-  line-height: 0.8rem;
+  line-height:0.7rem;
   word-wrap: break-word;
-  
+  text-indent: -2rem;
+  overflow-wrap: break-word;
 }
 
 .rellax{
@@ -512,7 +485,7 @@ figcaption{
 
 /* if you want to hide something visually but want to keep it readable / accessible for screen readers (sr) */
 
-.sr-only {
+/* .sr-only {
   border: 0 !important;
   clip: rect(1px, 1px, 1px, 1px) !important;
   -webkit-clip-path: inset(50%) !important;
@@ -525,7 +498,7 @@ figcaption{
   width: 1px !important;
   white-space: nowrap !important;
 }
-
+ */
 
 
 
@@ -575,11 +548,23 @@ figcaption{
 
   /* styles for screen sizes 779px, should covers 'mobile' and 'tablet' */
   /* style this one first and then use the two others to 'override' some styles (exceptions/details) */
- 
+  .body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* div.page-wrapper {
+    width: 100%;
+  } */
+
+  .title {
+    padding-bottom: 15rem;
+  }
+
   .title h1{
     font-size: 10vw;
     word-spacing: -1vw;
-    padding-top: 10rem;
+    padding-top: 25rem;
     font: var(--font-size-head*3) var(--font-family);
     font-weight: 400;
     line-height: 3rem;
@@ -591,10 +576,10 @@ figcaption{
       position: absolute;
       justify-content: center;
       left: 50%;
-      padding-top: 100vh;
+      padding-top: 30vh;
       transform: translate(-50%, -50%);
       z-index: 0;
-      width: 75vw;
+      width: 85vw;
     }  
 
   .rellax-layer img {
@@ -636,6 +621,20 @@ figcaption{
     margin-right: 1rem;
   }
 
+  .chapter_number{
+    font-size: 1.2rem;
+  }
+  
+  .subtitle {
+    font-size: 1.5rem;
+  }
+  
+  /* .h2{
+    text-align: center;
+    font-size: 1.5rem;
+  } */
+
+
   .chapter{
     margin-left: 1rem;
     margin-right: 1rem;
@@ -645,17 +644,40 @@ figcaption{
     width: 100%;
   }
 
+  .tutorial {
+    position: static;
+    display:inline-flex;
+    max-width: 4vw;
+    max-height: 4vh;
+  }
+  .tutorial img { width: 3.5vw; }
+  .fulltext {
+    padding: 5px;
+    font-size: 0.6rem;
+    line-height: 1rem;
+    /* box-sizing: border-box; */
+    width: 40vw;
+    max-height: 25vh;
+    position: absolute;
+  }
+
+
+
   .rellax { transform: none !important }
   .title{
     text-align: center;
+  }
+
+  .imgpar {
+    align-content: center;
   }
 
   .imginpar {
     position: relative;
     float: left;
     align-content: center;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     width: 100%;
   }
 
@@ -688,27 +710,32 @@ figcaption{
     text-decoration: none;
   }
 
-  .bio{
-    /* width: 100%; */
-    overflow: hidden;
+  .bio {
+    padding: var(--margin);
+    /* width: 80%; */
+    /* overflow: hidden; */
     margin-left: 1rem;
     margin-right: 1rem;
     margin-bottom: 15rem;  
     font-size: 0.8rem;
     line-height: 1rem;
     column-count: 2;
+    overflow-wrap: break-word;
+    column-gap: 40px;
+    /* margin: auto; */
+    text-indent: 0.3rem;
   }
 
   figcaption{
     float: left;
     position: relative;
-    font-size: 0.6rem;
+    font-size: 0.65rem;
   }
   .quote p{
     font: var(--font-size-head) var(--font-family);
     font-weight: 400;
     font-style: italic;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   
   /* utilities */
