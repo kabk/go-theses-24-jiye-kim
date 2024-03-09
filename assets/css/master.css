@@ -19,7 +19,6 @@
 }
 
 
-
 /* GENERAL STYLES */
 
 html {
@@ -142,8 +141,8 @@ p{
 }
 
 .tutorial:hover .fulltext {
-visibility: visible;
-opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
 
 
@@ -163,36 +162,17 @@ ol{
 }
 
 
-
 .navigation{
   text-align: center;
   margin-bottom: 10rem;
+  
   z-index: 1;
-  /* float: left;
-  color: #f2f2f2;
-  text-align: center;
-  text-decoration: none;
-  font-size: 17px;
-  background-color: white;
-  width: 100%;
-  height: 2.5rem; */
+  align-items: center;
 }
 
-@keyframes example {
-  0%   { background-color: transparent; opacity:0; left:50%; top:0px;}
-  100% { background-color: transparent; opacity:0;}
-  100% { background-color: transparent; opacity:1;  right:0px; top:0px;}
-}
 .navigation a{
-/* float: left;
-color: #25150b;
-text-align: center;
-padding: 0.5rem;
-text-decoration: none;
-font-size: 25px; */
-margin-left: 1rem;
+  /* margin-left: 1rem; */
 }
-
 
 
 .sticky {
@@ -210,9 +190,8 @@ margin-left: 1rem;
   background-color: transparent;
   padding-top: 1rem;
   padding-left: 2.5rem;
-
+  align-items: center;
 }
-
 
 
 /* PAGE STYLES */
@@ -246,27 +225,45 @@ header{
   text-align: left;
   margin-left: 20%;
   margin-right: 20%;
-  margin-bottom: 6rem;
+  margin-bottom: 10rem;
   font-size: 0.5rem;
 }
 
-.toc{
+.toc {
   font-size: 0.8rem;
   text-align: center;
-  margin-bottom: 5rem;
-  margin-top: 5rem;
+  margin-block: 5rem;
   height: 400px;
 }
 
-.toc li{
-  margin-bottom: 1rem;
-  text-decoration: none;
-  float:left
+/* .toc * {
+  margin: 0;
+  padding: 0;
+} */
+.toc ul {
+  /* max-width: 1400px; */
+  /* margin-inline: auto; */
+list-style-type: none;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* display: flex; */
+  /* gap: 2rem; */
+  padding: 0;
 }
 
+.toc li {
+  margin-bottom: 1.5rem;
+  text-decoration: none;
+  border: 1px dotted red;
+  /* float:left */
+}
+.toc li br { display: none }
+
 .toc li a {
-  display: inline-block;
-  padding: 30px 30px;
+  /* max-width: 15vw; */
+  /* padding: 30px 30px; */
+  /* text-wrap: pretty; */
+  /* display: inline-block; */
 }
 
 
@@ -385,9 +382,10 @@ footer{
 .imginpar-left {
   position: relative;
   float: left;
-  align-content: center;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  /* align-content: center; */
+  /* margin-top: 5rem;
+  margin-bottom: 5rem; */
+  height: 100%;
   width: 22vw;
 }
 
@@ -589,8 +587,24 @@ figcaption{
     }
 
   .toc{
-      height: 500px;
+      /* height: 500px; */
+      justify-items: center;
     }    
+
+  .toc ul {
+    max-width: 75vw;
+    /* max-width: 1400px; */
+    margin-inline: auto;
+    /* list-style-type: none; */
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    /* display: flex; */
+    /* gap: 1rem; */
+  }
+
+  .toc li a {
+    margin: 13px;
+  }
 
   .abstract{
     margin-left: 1rem;
@@ -628,12 +642,7 @@ figcaption{
   .subtitle {
     font-size: 1.5rem;
   }
-  
-  /* .h2{
-    text-align: center;
-    font-size: 1.5rem;
-  } */
-
+ 
 
   .chapter{
     margin-left: 1rem;
@@ -642,6 +651,10 @@ figcaption{
 
   main{
     width: 100%;
+  }
+
+  .container{
+    margin-top: 2rem;
   }
 
   .tutorial {
@@ -656,9 +669,12 @@ figcaption{
     font-size: 0.6rem;
     line-height: 1rem;
     /* box-sizing: border-box; */
-    width: 40vw;
-    max-height: 25vh;
-    position: absolute;
+    /* width: 40vw; */
+    /* max-height: 25vh; */
+    /* position: absolute; */
+    display: inline-block;
+    text-indent: 0rem;
+    text-wrap: pretty;
   }
 
 
@@ -681,6 +697,17 @@ figcaption{
     width: 100%;
   }
 
+  .imginpar-left {
+    position: relative;
+    float: left;
+    align-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+  
+
   .textinpar {
     margin-left: 0rem;
     padding-right: 0;
@@ -697,16 +724,21 @@ figcaption{
   width: 80vw;
   }
 
+  .imginpar-left img{
+    width: 80vw;
+    }
+
   #navbar{
-  width: 100%;
-  text-align: center;
-  padding-left: 0;
-  color: #25150b;
-  background-color: white;
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+    color: #c47a3b;
+    background-color: white;
+    align-items: center;
   }
 
   .navigation a:link{
-    color: #25150b;
+    color:#c47a3b;
     text-decoration: none;
   }
 
@@ -716,7 +748,7 @@ figcaption{
     /* overflow: hidden; */
     margin-left: 1rem;
     margin-right: 1rem;
-    margin-bottom: 15rem;  
+    margin-bottom: 5rem;  
     font-size: 0.8rem;
     line-height: 1rem;
     column-count: 2;
@@ -731,6 +763,7 @@ figcaption{
     position: relative;
     font-size: 0.65rem;
   }
+
   .quote p{
     font: var(--font-size-head) var(--font-family);
     font-weight: 400;
