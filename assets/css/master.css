@@ -43,7 +43,7 @@ body {
 }
 
 #colorback {
-  width: 100vw;
+  width: 100%;
   height: 100px;
   background-image: linear-gradient(to bottom, transparent 40%, rgb(13, 111, 18));
   position: fixed;
@@ -124,7 +124,8 @@ p{
 }
 
 sup {
-  color: grey;
+  color: rgb(13, 111, 18);
+  font-family: 'Hahmlet', serif;
 }
 
 
@@ -296,7 +297,10 @@ footer{
   width: 100%;
   text-align: center;
   margin-bottom: 3rem;
-  font-size: var(--font-size-body);
+}
+
+footer p{
+  font-size: 0.6rem;
 }
 
 .abstract{
@@ -305,7 +309,7 @@ footer{
     padding: var(--margin);
     margin-left: 20%;
     margin-right: 20%;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 
 .abstract p{
@@ -347,23 +351,17 @@ footer{
   font-size: 2rem;
 }
 
-#text{
-
-}
 
 .text{
   order: 2;
   width: 100%;
 }
 
-.text p{
-}
-
 .chapter{
   margin-left: 20%;
   margin-right: 20%;
   display: flex;
-  margin-bottom: 15rem;
+  margin-bottom: 12rem;
   /* width: 100%; */
   mix-blend-mode: multiply;
 }
@@ -374,16 +372,13 @@ footer{
   font-weight: 400;
 }
 
-
 .chapter-image{
   /* margin-left: 10vw; */
   width: 100vw;
-  opacity: 0.6;
+  opacity: 0.4;
   z-index: -3;
   position: absolute;
-  /* justify-content: center;
-  display: inline; */
-  /* transform: translate(-50%, -50%); */
+
 }
 
 .chapter2 img {
@@ -391,9 +386,6 @@ footer{
   align-items: center;
 }
 
-.imgpar{
-  /* background-color: aquamarine; */
-}
 
 .imginpar-left {
   position: relative;
@@ -457,7 +449,7 @@ figcaption{
   padding: var(--margin);
   margin-left: 10%;
   margin-right: 10%;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
   column-count: 3;
   overflow-wrap: break-word;
   column-gap: 65px;
@@ -572,13 +564,13 @@ figcaption{
   } */
 
   .title {
-    padding-bottom: 15rem;
+    padding-bottom: 12rem;
   }
 
   .title h1{
     font-size: 10vw;
     word-spacing: -1vw;
-    padding-top: 25rem;
+    padding-top: 24rem;
     font: var(--font-size-head*3) var(--font-family);
     font-weight: 400;
     line-height: 3rem;
@@ -590,7 +582,7 @@ figcaption{
       position: absolute;
       justify-content: center;
       left: 50%;
-      padding-top: 30vh;
+      padding-top: 34vh;
       transform: translate(-50%, -50%);
       z-index: 0;
       width: 85vw;
@@ -652,6 +644,7 @@ figcaption{
   .intro{
     margin-left: 1rem;
     margin-right: 1rem;
+    margin-bottom: 8rem;
   }
 
   .chapter_number{
@@ -666,6 +659,7 @@ figcaption{
   .chapter{
     margin-left: 1rem;
     margin-right: 1rem;
+    margin-bottom: 8rem;
   }
 
   main{
@@ -767,9 +761,9 @@ figcaption{
 
   .bio {
     padding: var(--margin);
-    /* width: 80%; */
+    width: 80%;
     /* overflow: hidden; */
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
     margin-right: 1rem;
     margin-bottom: 5rem;  
     font-size: 0.8rem;
