@@ -373,12 +373,10 @@ footer p{
 }
 
 .chapter-image{
-  /* margin-left: 10vw; */
-  width: 100vw;
+  width: 100%;
   opacity: 0.4;
   z-index: -3;
   position: absolute;
-
 }
 
 .chapter2 img {
@@ -625,8 +623,8 @@ figcaption{
 
   .abstract p{
     text-align: left;
-    font-size: 0.7em;
-    line-height: 1.2rem;
+    /* font-size: 0.7em;
+    line-height: 1.2rem; */
     column-count: 1;
   }
 
@@ -778,7 +776,7 @@ figcaption{
   figcaption{
     float: left;
     position: relative;
-    font-size: 0.65rem;
+    font-size: 0.6rem;
   }
 
   .quote p{
