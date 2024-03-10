@@ -6,8 +6,8 @@
 :root {
   /* Color settings */
   --color-background: transparent;
-  --color-text: #25150b;
-  --color-text-link: #c47a3b;
+  --color-text: #4b4b4b;
+  --color-text-link:  rgb(13, 111, 18);
   --color-text-link-hover: #442723;
   /* Font settings */
   --font-family: 'Hahmlet', serif, 'Noto Sans KR', sans-serif;
@@ -16,6 +16,7 @@
   --font-size-head: 38px;
   /* Margins settings */
   --margin: 1rem;
+  
 }
 
 
@@ -27,6 +28,7 @@ html {
   background-color: var(--color-background);
   scroll-behavior: smooth;
   width: 100%;
+  
 }
 
 body {
@@ -37,7 +39,16 @@ body {
   width:100%;
   height:100%;
   overflow-y: auto;
-  overflow-x: hidden;
+  overflow-x: hidden; 
+}
+
+#colorback {
+  width: 100vw;
+  height: 100px;
+  background-image: linear-gradient(to bottom, transparent 40%, rgb(13, 111, 18));
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
 
 a {
@@ -65,7 +76,8 @@ a:focus-visible {
   line-height: 8rem;
   margin-bottom: 40rem;
   z-index: 1;
-  }
+  color: #25150b;
+}
 
 .title img{
   position: absolute;
@@ -111,14 +123,18 @@ p{
   font-size: 0.8rem;
 }
 
+sup {
+  color: grey;
+}
+
 
 .tutorial {
   position: static;
   display:inline-flex;
-  max-width: 2.5vw;
-  max-height: 2.5vh;
+  max-width: 1.8vw;
+  max-height: 1.8vh;
 }
-.tutorial img { width: 2vw; }
+.tutorial img { width: 100%; height: 100%;}
 .fulltext {
   padding: 5px;
   font-family: 'Hahmlet', serif;
@@ -135,7 +151,15 @@ p{
   opacity: 0;
   transition: opacity 0.3s;
   z-index: 2;
+  text-indent: 0rem;
+  overflow-wrap: break-word;
+  text-wrap: balance;
 }
+
+.def{
+  background-color: rgb(252, 244, 107) ;
+}
+
 .tutorial .fulltext {
   visibility: hidden;
 }
@@ -164,15 +188,11 @@ ol{
 
 .navigation{
   text-align: center;
-  margin-bottom: 10rem;
-  
+  /* margin-bottom: 10rem; */
   z-index: 1;
   align-items: center;
 }
 
-.navigation a{
-  /* margin-left: 1rem; */
-}
 
 
 .sticky {
@@ -184,8 +204,8 @@ ol{
   width: 17.2%;
   font-size: 17px;
   height: 2.5rem;
-  animation-name: example;
-  animation-duration: 1s;
+  /* animation-name: example; */
+  /* animation-duration: 1s; */
   margin-top: 0rem;
   background-color: transparent;
   padding-top: 1rem;
@@ -201,6 +221,7 @@ ol{
 div.page-wrapper {
   /* the element that 'wraps' everything */
   padding: var(--margin);
+  
 }
 
 /* navigation */
@@ -236,14 +257,13 @@ header{
   height: 400px;
 }
 
-/* .toc * {
-  margin: 0;
-  padding: 0;
-} */
+.toc h2 {
+  margin-bottom: 3rem;
+}
+
+
 .toc ul {
-  /* max-width: 1400px; */
-  /* margin-inline: auto; */
-list-style-type: none;
+  list-style-type: none;
   justify-content: center;
   flex-wrap: wrap;
   /* display: flex; */
@@ -254,17 +274,9 @@ list-style-type: none;
 .toc li {
   margin-bottom: 1.5rem;
   text-decoration: none;
-  border: 1px dotted red;
-  /* float:left */
 }
 .toc li br { display: none }
 
-.toc li a {
-  /* max-width: 15vw; */
-  /* padding: 30px 30px; */
-  /* text-wrap: pretty; */
-  /* display: inline-block; */
-}
 
 
 main{
@@ -272,6 +284,7 @@ main{
   float: center;
   /* margin-left: 2%;
   margin-right: 2%; */
+  
 }
 .container{
   width: 100%;
@@ -281,7 +294,9 @@ main{
 footer{
   position: relative;
   width: 100%;
-  float: left;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: var(--font-size-body);
 }
 
 .abstract{
@@ -312,6 +327,7 @@ footer{
   font-weight: normal;
   margin: 0;
   margin-bottom: 2rem;
+  color: rgb(13, 111, 18);
 }
 
 .abstract h2{
@@ -360,8 +376,8 @@ footer{
 
 
 .chapter-image{
-  margin-left: 20vw;
-  width: 50vw;
+  /* margin-left: 10vw; */
+  width: 100vw;
   opacity: 0.6;
   z-index: -3;
   position: absolute;
@@ -569,7 +585,7 @@ figcaption{
     margin-bottom: 0;
     z-index: 1;
   }
-
+                          
   .title img{
       position: absolute;
       justify-content: center;
@@ -582,18 +598,21 @@ figcaption{
 
   .rellax-layer img {
       z-index: -2;
-      position: absolute;
+      position: absolute;                                                                                                                                                                                                                                                                                    
       width: 100%;
     }
 
-  .toc{
+  .toc h2 {                                  
+    font-size: 1.5rem;
+  }                                                                                                                                                                                                                                                                    
+                                               
+  .toc{                               
       /* height: 500px; */
-      justify-items: center;
-    }    
+      justify-items: center;                                                                                                                                                                                                                                             rte      rj     jty      t     adf     g a      f                                                                                                                                                              z 
+    }                                                                                                                           
 
-  .toc ul {
+  .toc ul {                               
     max-width: 75vw;
-    /* max-width: 1400px; */
     margin-inline: auto;
     /* list-style-type: none; */
     justify-content: center;
@@ -660,8 +679,8 @@ figcaption{
   .tutorial {
     position: static;
     display:inline-flex;
-    max-width: 4vw;
-    max-height: 4vh;
+    max-width: 4.5vw;
+    max-height: 4.5vh;
   }
   .tutorial img { width: 3.5vw; }
   .fulltext {
@@ -669,12 +688,15 @@ figcaption{
     font-size: 0.6rem;
     line-height: 1rem;
     /* box-sizing: border-box; */
-    /* width: 40vw; */
+    width: 35vw;
     /* max-height: 25vh; */
     /* position: absolute; */
     display: inline-block;
     text-indent: 0rem;
-    text-wrap: pretty;
+    overflow-wrap: break-word;
+  }
+  .left {
+    margin-left: -34vw;
   }
 
 
@@ -686,6 +708,7 @@ figcaption{
 
   .imgpar {
     align-content: center;
+    margin: 0;
   }
 
   .imginpar {
@@ -700,7 +723,7 @@ figcaption{
   .imginpar-left {
     position: relative;
     float: left;
-    align-content: center;
+    /* align-content: center; */
     margin-top: 2rem;
     margin-bottom: 2rem;
     width: 100%;
@@ -732,13 +755,13 @@ figcaption{
     width: 100%;
     text-align: center;
     padding-left: 0;
-    color: #c47a3b;
+    color:  rgb(13, 111, 18);
     background-color: white;
     align-items: center;
   }
 
   .navigation a:link{
-    color:#c47a3b;
+    color: rgb(13, 111, 18);
     text-decoration: none;
   }
 
