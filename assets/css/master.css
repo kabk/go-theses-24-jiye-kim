@@ -16,7 +16,6 @@
   --font-size-head: 38px;
   /* Margins settings */
   --margin: 1rem;
-  
 }
 
 
@@ -97,27 +96,23 @@ a:focus-visible {
 }
 
 h2{
-  /* h2 style */
   font: var(--font-size-head) var(--font-family);
   font-weight: 400;
 }
 
 h3{
-  /* h3 style */
   font: var(--font-size-head) var(--font-family);
   font-weight: 400;
 
 }
 
 h4, h5, h6 {
-  /* h4-h5-h6 style */
   font: var(--font-size-head) var(--font-family);
   font-weight: 400;
   text-align: center;
 }
 
 p{
-  /* paragraph style */
   font: var(--font-size-body) var(--font-family-body);
   line-height: 1.2rem;
   font-size: 0.8rem;
@@ -141,7 +136,6 @@ sup {
   font-family: 'Hahmlet', serif;
   font-size: 0.6rem;
   line-height: 1rem;
-  /* box-sizing: border-box; */
   width: 20vw;
   max-height: 25vh;
   position: absolute;
@@ -189,11 +183,9 @@ ol{
 
 .navigation{
   text-align: center;
-  /* margin-bottom: 10rem; */
   z-index: 1;
   align-items: center;
 }
-
 
 
 .sticky {
@@ -205,8 +197,6 @@ ol{
   width: 17.2%;
   font-size: 17px;
   height: 2.5rem;
-  /* animation-name: example; */
-  /* animation-duration: 1s; */
   margin-top: 0rem;
   background-color: transparent;
   padding-top: 1rem;
@@ -267,8 +257,6 @@ header{
   list-style-type: none;
   justify-content: center;
   flex-wrap: wrap;
-  /* display: flex; */
-  /* gap: 2rem; */
   padding: 0;
 }
 
@@ -283,10 +271,8 @@ header{
 main{
   position: relative;
   float: center;
-  /* margin-left: 2%;
-  margin-right: 2%; */
-  
 }
+
 .container{
   width: 100%;
   margin-top: 10rem;
@@ -304,8 +290,6 @@ footer p{
 }
 
 .abstract{
-    /* margin-left: 10rem;
-    margin-bottom: 15rem;   */
     padding: var(--margin);
     margin-left: 20%;
     margin-right: 20%;
@@ -486,23 +470,6 @@ figcaption{
 .mobile {
   display: none;
 }
-
-/* if you want to hide something visually but want to keep it readable / accessible for screen readers (sr) */
-
-/* .sr-only {
-  border: 0 !important;
-  clip: rect(1px, 1px, 1px, 1px) !important;
-  -webkit-clip-path: inset(50%) !important;
-  clip-path: inset(50%) !important;
-  height: 1px !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  padding: 0 !important;
-  position: absolute !important;
-  width: 1px !important;
-  white-space: nowrap !important;
-}
- */
 
 
 
