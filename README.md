@@ -1,3 +1,5 @@
-#This is my Thesis website for KABK 2024
+© Jiye Kim 2024
+BA Graphic Design, Royal Academy of Art, The Hague(KABK)
 
-Made by Jiye Kim
+Thesis Supervised by Prof. Füsun Türetken
+Coding Supervised by Thomas Buxo, François Girard-Meunier
