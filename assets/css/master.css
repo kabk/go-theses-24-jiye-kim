@@ -486,22 +486,22 @@ figcaption{
   :root{ --font-size: 16px; } html, body {font: var(--font-size) var(--font-family);} 
 }
 @media (min-width: 340px) and (max-width: 439px) { 
-  :root{ --font-size: 17px; } html, body {font: var(--font-size) var(--font-family);} 
+  :root{ --font-size: 17.5px; } html, body {font: var(--font-size) var(--font-family);} 
 }
 @media (min-width: 440px) and (max-width: 599px) { 
-  :root{ --font-size: 18px; } html, body {font: var(--font-size) var(--font-family);}
-}
-@media (min-width: 600px) and (max-width: 779px) { 
   :root{ --font-size: 19px; } html, body {font: var(--font-size) var(--font-family);}
 }
-@media (min-width: 780px) and (max-width: 992px) { 
-  :root{ --font-size: 22px; } html, body {font: var(--font-size) var(--font-family);}
+@media (min-width: 600px) and (max-width: 779px) { 
+  :root{ --font-size: 20px; } html, body {font: var(--font-size) var(--font-family);}
 }
-@media (min-width: 993px) and (max-width: 1200px) { 
+@media (min-width: 780px) and (max-width: 992px) { 
   :root{ --font-size: 23px; } html, body {font: var(--font-size) var(--font-family);}
 }
+@media (min-width: 993px) and (max-width: 1200px) { 
+  :root{ --font-size: 25px; } html, body {font: var(--font-size) var(--font-family);}
+}
 @media (min-width: 1201px) and (max-width: 1319px) { 
-  :root{ --font-size: 24px; } html, body {font: var(--font-size) var(--font-family);}
+  :root{ --font-size: 25px; } html, body {font: var(--font-size) var(--font-family);}
 }
 @media (min-width: 1320px) and (max-width: 1619px) { 
   :root{ --font-size: 26px; } html, body {font: var(--font-size) var(--font-family);}
@@ -569,14 +569,13 @@ figcaption{
   .toc{                               
     justify-items: center;
     height: 450px;
-    /* margin-bottom: 3rem;                                                                                                                                                                                                                                        rte      rj     jty      t     adf     g a      f                                                                                                                                                              z  */
-    }                                                                                                                           
+  }                                                                                                                           
 
   .toc ul {                               
     max-width: 75vw;
     margin-inline: auto;
     justify-content: center;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   .toc li a {
@@ -584,8 +583,8 @@ figcaption{
   }
 
   .abstract{
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
     margin-bottom: 1rem;  
   }
 
@@ -597,15 +596,15 @@ figcaption{
   .thanks {
     padding: var(--margin);
     text-align: left;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
     margin-bottom: 6rem;
     font-size: 0.6rem;
   }
 
   .intro{
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
     margin-bottom: 8rem;
   }
 
@@ -620,8 +619,8 @@ figcaption{
  
 
   .chapter{
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
     margin-bottom: 8rem;
   }
 
@@ -645,7 +644,7 @@ figcaption{
     font-size: 0.65rem;
     line-height: 1rem;
     /* box-sizing: border-box; */
-    width: 35vw;
+    width: 37vw;
     max-height: 35vh;
     /* position: absolute; */
     display: inline-block;
@@ -731,18 +730,18 @@ figcaption{
     /* margin: auto; */
   }
   .bio p {
-    text-indent: -1.2rem;
-    font-size: 0.55rem;
-    line-height: 0.8rem;
+    text-indent: -1rem;
+    font-size: 0.65rem;
+    line-height: 0.85rem;
   }
+  footer p {font-size: 0.65rem;}
 
   figcaption{
     float: left;
     position: relative;
-    font-size: 0.65rem;
+    font-size: 0.68rem;
     line-height: 1rem;
   }
-
   .quote p{
     font: var(--font-size-head) var(--font-family);
     font-weight: 400;
